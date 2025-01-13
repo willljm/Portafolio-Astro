@@ -1,0 +1,22 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Hero from '../components/Hero';
+import Technologies from '../components/Technologies';
+import Projects from '../components/Projects';
+import AboutExtended from '../components/AboutExtended';
+import Contact from '../components/Contact';
+import Footer from '../components/Footer';
+import Navbar from '../components/Navbar';
+---
+
+<Layout title="Wildeiner Meza - Portfolio">
+  <main class="relative">
+    <Navbar client:load />
+    <Hero client:load />
+    <Technologies client:load />
+    <Projects client:load />
+    <AboutExtended client:load />
+    <Contact client:load />
+    <Footer client:load />
+  </main>
+</Layout>
